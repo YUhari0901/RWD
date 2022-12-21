@@ -1,3 +1,5 @@
+
+
 /* Base Style */
 body,
 body::before,
@@ -28,37 +30,28 @@ img {
   height: auto;
 }
 
-video, 
-{
+video {
   width: 100%;
   height: auto;
 }
-/* 가로가 100%일때 세로는 56.25% */
-/* 반응형 iframe */
-.iframeWrapper{
-  background-color: blueviolet;
-  position: relative;
-  padding-top: 56.25%;
-  width: 100%;
-  height: 0 !important ;
+
+/* 반응형 Iframe */
+
+.iframeRatio-21-9 {
+  aspect-ratio: 21/9;
 }
 .iframeRatio-16-9 {
-  padding-top: 21/9;
-}
-.iframeRatio-21-9 {
-  padding-top: 16/9;
+  aspect-ratio: 16/9;
 }
 .iframeRatio-4-3 {
-  padding-top: 4/3;
+  aspect-ratio: 4/3;
 }
 .iframeRatio-1-1 {
-  padding-top: 1/1;
+  aspect-ratio: 1/1;
 }
-.iframeWrapper iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.iframeWrapper iframe {
+  display: block;
   width: 100%;
   height: 100%;
 }
-
